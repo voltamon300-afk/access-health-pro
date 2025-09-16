@@ -65,7 +65,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <HeroSection />
+      <HeroSection onGetStarted={handleGetStarted} />
       <FeaturesSection />
       
       {/* CTA Section */}

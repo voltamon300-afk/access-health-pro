@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Shield, UserCheck, Stethoscope, Pill, Clock, QrCode } from "lucide-react";
 import heroImage from "@/assets/healthcare-hero.jpg";
 
-const HeroSection = () => {
+const HeroSection = ({ onGetStarted }: { onGetStarted?: () => void }) => {
   return (
     <section className="relative min-h-screen bg-gradient-to-br from-background to-accent overflow-hidden">
       {/* Background Pattern */}
@@ -43,7 +43,11 @@ const HeroSection = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-glow transition-all duration-300">
+              <Button 
+                size="lg" 
+                onClick={onGetStarted}
+                className="bg-gradient-to-r from-primary to-primary-glow hover:shadow-glow transition-all duration-300"
+              >
                 Get Started Today
               </Button>
               <Button variant="outline" size="lg" className="border-primary/20 hover:bg-primary/5">
