@@ -10,22 +10,10 @@ const FeaturesSection = () => {
       color: "text-primary"
     },
     {
-      icon: Smartphone,
-      title: "OTP Authentication",
-      description: "Multi-factor authentication ensuring secure access to medical data",
-      color: "text-blue-500"
-    },
-    {
       icon: QrCode,
       title: "QR Code Access",
       description: "Quick and secure access to medical records through QR codes",
       color: "text-secondary"
-    },
-    {
-      icon: Database,
-      title: "Secure Medical Records",
-      description: "HIPAA compliant storage with end-to-end encryption",
-      color: "text-purple-500"
     },
     {
       icon: Bell,
