@@ -86,8 +86,12 @@ const Index = () => {
               >
                 Get Started Now
               </Button>
-              <Button variant="outline" size="lg">
-                Schedule Demo
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={handleGetStarted}
+              >
+                Login
               </Button>
             </div>
           </div>
